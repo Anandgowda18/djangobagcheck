@@ -5,7 +5,7 @@ from django.shortcuts import render
 import random
 def red_green(request):
     x = random.random()
-    if x > 0.5:
-        return render(request,'firstproject/templates/index_green.html')
+    if x > 0.3:
+        return render(request,'index_green.html')
     else:
-        return render(request,'firstproject/templates/index_red.html')
+        return render(request,'index_red.html')
